@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Kolekcja iFrame</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen p-4 md:p-8">
+
+    <div class="max-w-7xl mx-auto space-y-8">
+        
+        <header class="border-b border-slate-700 pb-4 text-center md:text-left">
+            <h1 class="text-3xl font-bold text-indigo-400">Zbiorczy Pulpit Ramek</h1>
+            <p class="text-slate-400 text-sm mt-1">Strona z na stałe osadzonymi materiałami.</p>
+        </header>
+
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden shadow-lg flex flex-col h-[400px]">
+                <div class="p-3 border-b border-slate-700 bg-slate-800/80">
+                    <h2 class="font-medium text-slate-200 text-sm truncate">Przykładowe Wideo (YouTube)</h2>
+                </div>
+                <div class="flex-1 bg-black">
+                    <iframe 
+                        class="w-full h-full border-0" 
+                        src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" 
+                        title="YouTube video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden shadow-lg flex flex-col h-[400px]">
+                <div class="p-3 border-b border-slate-700 bg-slate-800/80">
+                    <h2 class="font-medium text-slate-200 text-sm truncate">Lokalizacja (Google Maps)</h2>
+                </div>
+                <div class="flex-1 bg-black">
+                    <iframe 
+                        class="w-full h-full border-0" 
+                        src="https://maps.google.com/maps?q=Warszawa&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden shadow-lg flex flex-col h-[400px]">
+                <div class="p-3 border-b border-slate-700 bg-slate-800/80">
+                    <h2 class="font-medium text-slate-200 text-sm truncate">Wikipedia</h2>
+                </div>
+                <div class="flex-1 bg-black">
+                    <iframe 
+                        class="w-full h-full border-0" 
+                        src="https://pl.wikipedia.org/wiki/Strona_g%C5%82%C3%B3wna" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            </main>
+    </div>
+
+</body>
+</html>

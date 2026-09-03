@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakupy i Papierosy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen p-4 md:p-8">
+
+    <div class="max-w-7xl mx-auto space-y-8">
+        
+        <header class="border-b border-slate-700 pb-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+                <h1 class="text-3xl font-bold text-indigo-400">Zakupy & Fajki</h1>
+                <p class="text-slate-400 text-sm mt-1">Szybka lista sprawdzianów przed wyjściem do sklepu.</p>
+            </div>
+            <a href="index.html" class="inline-flex items-center justify-center px-4 py-2 bg-slate-800 border border-slate-700 hover:bg-slate-700 text-indigo-400 text-sm font-medium rounded-lg transition-colors w-fit">
+                &larr; Spis treści
+            </a>
+        </header>
+
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden shadow-lg flex flex-col">
+                <div class="p-3 border-b border-slate-700 bg-slate-800/80">
+                    <h2 class="font-medium text-slate-200 text-sm truncate">Papierosy & Tytoń</h2>
+                </div>
+                <div class="p-4 flex-1">
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <input type="checkbox" class="w-4 h-4 rounded border-slate-700 bg-slate-900 text-indigo-500 focus:ring-indigo-500">
+                            <span class="text-slate-300 text-sm">Marlboro Gold</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <input type="checkbox" class="w-4 h-4 rounded border-slate-700 bg-slate-900 text-indigo-500 focus:ring-indigo-500">
+                            <span class="text-slate-300 text-sm">Camel Yellow</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <input type="checkbox" class="w-4 h-4 rounded border-slate-700 bg-slate-900 text-indigo-500 focus:ring-indigo-500">
+                            <span class="text-slate-300 text-sm">Zapalniczka / Kamienie</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden shadow-lg flex flex-col">
+                <div class="p-3 border-b border-slate-700 bg-slate-800/80">
+                    <h2 class="font-medium text-slate-200 text-sm truncate">Spożywcze</h2>
+                </div>
+                <div class="p-4 flex-1">
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <input type="checkbox" class="w-4 h-4 rounded border-slate-700 bg-slate-900 text-indigo-500 focus:ring-indigo-500">
+                            <span class="text-slate-300 text-sm">Chleb i bułki</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <input type="checkbox" class="w-4 h-4 rounded border-slate-700 bg-slate-900 text-indigo-500 focus:ring-indigo-500">
+                            <span class="text-slate-300 text-sm">Mleko</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <input type="checkbox" class="w-4 h-4 rounded border-slate-700 bg-slate-900 text-indigo-500 focus:ring-indigo-500">
+                            <span class="text-slate-300 text-sm">Kawa</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <input type="checkbox" class="w-4 h-4 rounded border-slate-700 bg-slate-900 text-indigo-500 focus:ring-indigo-500">
+                            <span class="text-slate-300 text-sm">Woda mineralna</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
